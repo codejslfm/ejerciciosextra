@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*17.	Escribe un programa que pida un número de 3 dígitos 
+        y que muestre en pantalla el resultado de sumarlos.*/
+
+        let number = parseInt(prompt("Introduce un número de tres cifras"));
+        alert(number.toString().split('').reduce(function(r, n) { return r + parseInt(n) }, 0));  
+        
+
+        
+    
+        
+     
+    </script>
+</body>
+</html>
