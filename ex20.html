@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*20.	Escribe un programa que pida un número de minutos y muestre cuantos años y días son.*/
+
+        let minutos = prompt("Escribe una cantidad de minutos");
+        let años = Math.floor(minutos/525600);
+        let dias = Math.floor((minutos%525600) / 1140);
+        alert (minutos + " son " + años + " años " + dias + " dias");
+
+    </script>
+</body>
+</html>
