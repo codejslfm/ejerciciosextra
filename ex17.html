@@ -8,7 +8,10 @@
 <body>
     <script>
         /*17.	Escribe un programa que pida un número de 3 dígitos 
-        y que muestre en pantalla el resultado de sumarlos.*/
+        y que muestre en pantalla el resultado de sumarlos.
+        Conviertes el number a string usando .toString().
+        Luego generas un array separando cada uno de los números, usando .split('')
+        Por último, queda iterar el array y sumar cada uno de los valores, usando .reduce(fn);*/
 
         let number = parseInt(prompt("Introduce un número de tres cifras"));
         alert(number.toString().split('').reduce(function(r, n) { return r + parseInt(n) }, 0));  
