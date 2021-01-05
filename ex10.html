@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        10.	Escribe un programa que pida al usuario el radio de un 
+        círculo y que calcule y muestre el área y el perímetro 
+        (el área de un círculo es PI por radio cuadrado y el perímetro es 2 por radio por PI). PI es = 3.141593*/
+
+        let radio = parseInt(prompt("Introduce el radio de un círculo"));
+        let area = Math.PI * (Math.pow(radio,2));
+        let perimetro = 2 * radio * Math.PI;
+
+        alert( "El area del círculo es " + area + " y el perímetro es " + perimetro );
+
+    </script>
+</body>
+</html>
