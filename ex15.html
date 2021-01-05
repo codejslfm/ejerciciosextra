@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*15.	Escribe un programa que pida una distancia (en metros), 
+        y el tiempo tardado (como tres números: horas, minutos y segundos) 
+        y que muestre la velocidad en metros por segundo y kilómetros por hora.*/
+
+        let distancia = parseInt(prompt("Escribe una distancia en metros"));
+        alert("Escribe el tiempo que ha tardado en recorrer esa distancia");
+        let horas = parseInt(prompt("HorasMinutosSegundos"));
+        let tiempo = Math.floor(horas*3600);
+        let veloMetros = distancia / tiempo;
+        let disoKilo = 3.6 * (tiempo);
+        let veloKilo = disoKilo / tiempo;
+        alert("La velocidad en m/s es " + veloMetros + "\n y la velocidad en K/h es " +veloKilo);
+
+    </script>
+</body>
+</html>
